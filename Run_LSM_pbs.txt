@@ -1,0 +1,7 @@
+#!/bin/bash -l        
+#PBS -l walltime=00:30:00,nodes=1:ppn=24
+#PBS -m abe 
+#PBS -M sloan091@umn.edu 
+cd /panfs/roc/groups/10/feng/sloan091/HESS_Codes/
+module load matlab
+matlab -nodisplay -r "maxNumCompThreads(24)" <LSM_Main_Parallel.m> output.txt 2>&1
