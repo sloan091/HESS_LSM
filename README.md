@@ -5,7 +5,7 @@ Sloan, B. P., Thompson, S. E., and Feng, X.: Plant Hydraulic Transport Controls 
 
 This LSM was coded using MATLAB version 2018b and should only require the Optimization Toolbox for nonlinear least squares.  Below is a brief description of the content of the folders in this repository. Please contact me at sloan091@umn.edu if there are any issues.
 
-## To Run LSM
+## RunLSM
 The LSM can be run either serially or in parallel mode by executing the _LSM_Serial.m_ or _LSM_Parallel.m_ scripts in MATLAB and ensuring all folders on in your MATLAB search path.  For the simulations in Sloan et al. (2021), the serial version takes approximately 30 minutes to run, whereas the parallel mode takes approximately 3 minutes using 24 cores. The _Run_LSM_pbs.txt_ is an example PBS script for submitting the parallel LSM to a supercomputer, which will require user modifications to ensure the syntax matches your particular system.
 
 ## Parameters
