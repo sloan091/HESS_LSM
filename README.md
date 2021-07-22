@@ -1,7 +1,7 @@
 # HESS_LSM
 This repository contains the MATLAB codes for the dual-source, two-big-leaf land surface model used Sloan et al. (2021). The provided codes allow users to recreate the simulation results for the US-Me2 ponderosa pine site using the five separate transpiration downregulation schemes. For full details refer to:
 
-Sloan, B. P., Thompson, S. E., and Feng, X.: Plant Hydraulic Transport Controls Transpiration Response to Soil Water Stress, Hydrol. Earth Syst. Sci., https://doi.org/10.5194/hess-2020-671, 2021.
+Sloan, B. P., Thompson, S. E., and Feng, X.: Plant hydraulic transport controls transpiration response to soil water stress, Hydrol. Earth Syst. Sci., https://doi.org/10.5194/hess-2020-671, 2021.
 
 This LSM was coded using MATLAB version 2018b and should only require the Optimization Toolbox for nonlinear least squares.  Below is a brief description of the content of the folders in this repository. Please contact me at sloan091@umn.edu if there are any issues.
 
