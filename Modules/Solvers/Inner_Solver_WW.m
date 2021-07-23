@@ -127,6 +127,7 @@ C_1_sh = 1.6*A_n_sh/((c_s_sh/BC.P_atm)*10^6);
 C_2_sl = (e_i_sl - IS_DVs.e_ca)/1000; 
 C_2_sh = (e_i_sh - IS_DVs.e_ca)/1000;
 
+% Sunlit and shaded stomatal conductance [moles air/m^2 LA/s].
 % Take larger root of quadratic equation to solver for g_s as done in CLM
 % v5. This trick substitutes the diffusion equations for vapor and CO2 and
 % H2O into Medlyn's stomatal response equation for an simpler solution.
@@ -148,7 +149,7 @@ if ~isreal(g_s_sh) || g_s_sh<0
 else
 end
 
-% Convert from moles to m/s
+% Convert from moles air/m^2 LA/s to m/s (or m^3 air/m^2 LA/s)
 g_s_slc = MolFlux2mps(g_s_sl,BC.P_atm,OS_DVs.T_l_sl);
 g_s_shc = MolFlux2mps(g_s_sh,BC.P_atm,OS_DVs.T_l_sh);
 
